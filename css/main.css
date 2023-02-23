@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing:  border-box;
+    --webkit-box-sizing:  border-box;
+    --moz-box-sizing:  border-box;
+}
+.large{
+    display: flex;
+    gap: 20px;
+    /* justify-content: space-around; */
+}
+.imgg{
+    background-position: center;
+
+}
+.three .imgg{
+    background-image: url(../image/kofta.jpg);
+}
+.four .imgg{
+    background-image: url(../image/dgg.jpg);
+}
+.five .imgg{
+    background-image: url(../image/m74i.jpg);
+}
+.six .imgg{
+    background-image: url(../image/brgr.jpg);
+}
+.seven .imgg{
+    background-image: url(../image/00.jpg);
+}
+.two .imgg{
+    background-image: url(../image/66150373_2511970275755798_7914832936422080512_n.jpg);
+}
+.imgg{
+
+    background-size: cover;
+    width: 250px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.big{
+    border-right: 1px solid #eee;
+}
+.big .box  img{
+    width: 250px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+@media (max-width:767px){
+    .large{
+        flex-direction: column;
+    }
+    .imgg{
+        width: 100%;
+        height: 342.5px;
+    }
+    .box{
+        flex-direction: column;
+        margin: 20px 20px !important;
+    }
+    .big .box  img{
+        width: 100%;
+    }
+    .big .box .text p{
+        width: fit-content !important;
+    }
+}
+.big .box:nth-child(1){
+    margin-top: 50px;
+}
+.big .box:not(:last-child){
+    margin-bottom: 10px;
+}
+.big .box{
+    width: fit-content;
+    background: #eee;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    box-shadow: 0 0 2px 0 black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.big .box .text{
+    padding: 15px;
+} 
+.big .box .text > h3{
+    font-family: "cursive";
+    font-style: italic;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.big .box .text i.red{
+    color: red;
+}
+.big .box .text .his{
+    font-size: 12px;
+}
+.big .box .text span:nth-child(2){
+    border-right: 1px solid #000;
+    padding-right: 5px;
+}
+.big .box .text i:nth-child(3){
+    padding-left: 5px;
+}
+.big .box .text p{
+    color: gray;
+    padding-top: 10px;
+    width: 500px;
+}
+.big .box .text .read{
+    cursor: pointer;
+    color: red;
+    padding-top: 15px;
+    display: block;
+    width: fit-content;
+}
+.big .box .text .read:hover{
+    text-decoration: underline;
+}
+.pages{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.pages div{
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.pages div:hover{
+    background-color: red;
+    color: #fff;
+}
+.pages div.one{
+    background-color: red;
+    border: none;
+    color: #fff;
+}
+/* start right */
+.right{
+    margin-top: 50px;
+}
+@media (max-width:767px){
+    .right{
+        margin: 50px !important;
+    }
+}
+.right input{
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    padding: 10px;
+    /* position: relative; */
+}
+.right > .ser{
+    width: fit-content;
+    position: relative;
+}
+.right > div .se{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+
+}
+.right > h3{
+    font-family: "cursive";
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.right .option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    padding-top: 10px;
+    margin: 0 20px;
+}
+.right .name{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.right .box-one{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.right .box-one:not(:last-child){
+    border-bottom: 1px solid #eee;
+}
+.right .img img{
+    border-radius: 10px;
+    width: 100px;
+    padding-right: 5px;
+}
+.right .box-one{
+    display: flex;
+}
+.right .box-one .history span:nth-child(3){
+    border-right: 1px solid #000;
+    padding-right: 5px;
+}
+.right .box-one .history i:nth-child(4){
+    padding-right: 5px;
+}
+.right .box-one .history i{
+    color: red;
+}
+.right .box-one .history{
+    font-size: 10px;
+}
+.right .box-one .history h3{
+    font-family: "cursive";
+    font-style: italic;
+    font-size: 15px;
+    color: gray;
+    padding-bottom: 10px;
+}
+.sale{
+    position: relative;
+    width: fit-content;
+    padding-top: 10px;
+    height: 15%;
+}
+.sale::before{
+    position: absolute;
+    content:'';
+    background-color: #000;
+    opacity: 0.7;
+    width: 100%;
+    height: calc(100% - 10px);
+}
+.sale img{
+    width: 200px;
+    height: 100%;
+}
+.sale .text{
+    position: absolute;
+    top: 15px;
+    padding: 20px;
+}
+@media (max-width:767px){
+    .sale .text{
+        padding: 10px !important;
+    }
+    button{
+        font-size: 10px;
+    }
+}
+.right .sale .text > h3{
+    font-family: "cursive";
+    font-style: italic;
+    font-size: 25px;
+    color: #fff;
+}
+.right .sale .text .red{
+    color: red;
+}
+.right .sale .text .offer{
+    display: flex;
+    font-size: 25px;
+    font-style: italic;
+    align-items: baseline;
+    gap: 5px;
+}
+.right .sale .text .small{
+    display: flex;
+    color: #fff;
+    display: block;
+    padding: 10px 0;
+    font-size: 10px;
+}
+
+.right .sale .text span:nth-child(3){
+    color: #fff;
+}
+.right .sale .text .offer span:nth-child(2){
+    color: #fff;
+}
+.right .sale .text button{
+    padding: 5px;
+    background-color: red;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.right .ins {
+    font-family: "cursive";
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    width: fit-content;
+}
+.right .instagram{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    padding: 5px;
+}
+.right .images img{
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+.right .tags {
+    font-family: "cursive";
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    width: fit-content;
+}
+.right .col-1 span, .col-2 span, .col-3 span{
+    background: #eee;
+    border-radius: 10px;
+    padding: 5px;
+}
+.right .col-1 , .col-2 , .col-3 {
+    width: fit-content;
+    margin-bottom: 20px;
+}
